@@ -1,0 +1,14 @@
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\bin\Debug\TempomapRepairTool.exe.config
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\bin\Debug\TempomapRepairTool.exe
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\bin\Debug\TempomapRepairTool.pdb
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\bin\Debug\ChartHelper.Parsing.dll
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\bin\Debug\ChartHelper.Types.dll
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\bin\Debug\ChartHelper.Parsing.xml
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\bin\Debug\ChartHelper.Types.xml
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\bin\Debug\Newtonsoft.Json.xml
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\obj\Debug\TempomapRepairTool.csproj.AssemblyReference.cache
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\obj\Debug\TempomapRepairTool.csproj.CoreCompileInputs.cache
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\obj\Debug\TempomapRepairTool.csproj.CopyComplete
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\obj\Debug\TempomapRepairTool.exe
+C:\Users\gavin\source\repos\TempomapRepairTool\TempomapRepairTool\obj\Debug\TempomapRepairTool.pdb

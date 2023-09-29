@@ -1,0 +1,162 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ChartHelper.Parsing</name>
+    </assembly>
+    <members>
+        <member name="T:ChartHelper.Parsing.FileHelper">
+            <summary>
+            A helper class for finding and interacting with .srtb files
+            </summary>
+        </member>
+        <member name="P:ChartHelper.Parsing.FileHelper.CustomPath">
+            <summary>
+            The current custom path, either the default custom path or one specified in Settings.txt
+            </summary>
+        </member>
+        <member name="P:ChartHelper.Parsing.FileHelper.Settings">
+            <summary>
+            A dictionary of values provided by Settings.txt, if it exists
+            </summary>
+        </member>
+        <member name="M:ChartHelper.Parsing.FileHelper.IsSrtb(System.String)">
+            <summary>
+            Returns true if the specified path or filename represents an srtb file
+            </summary>
+            <param name="path">The path or filename to test</param>
+            <returns>True if it is a .srtb file</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.FileHelper.TryGetSrtbWithFileName(System.String,System.String@)">
+            <summary>
+            Attempts to find the full path of an srtb file with the specified name
+            </summary>
+            <param name="name">The name of the srtb file to find, with or without the .srtb extension</param>
+            <param name="path">The resulting file path</param>
+            <returns>True if a valid path was found</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.FileHelper.GetAllSrtbs(System.String)">
+            <summary>
+            Gets all of the .srtb paths in the current custom folder
+            </summary>
+            <returns>An enumeration of all .srtb files</returns>
+        </member>
+        <member name="T:ChartHelper.Parsing.NoteConversion">
+            <summary>
+            Utility class for converting between the srtb note type and the ChartHelper note type
+            </summary>
+        </member>
+        <member name="M:ChartHelper.Parsing.NoteConversion.ToCustomNotesArray(System.Collections.Generic.IList{ChartHelper.Parsing.SRTB.Note})">
+            <summary>
+            Converts a set of srtb notes to an array of ChartHelper notes
+            </summary>
+            <param name="notes">The set of srtb notes</param>
+            <returns>An array of ChartHelper notes</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.NoteConversion.ToCustomNotesList(System.Collections.Generic.IList{ChartHelper.Parsing.SRTB.Note})">
+            <summary>
+            Converts a set of srtb notes to a list of ChartHelper notes
+            </summary>
+            <param name="notes">The set of srtb notes</param>
+            <returns>A list of ChartHelper notes</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.NoteConversion.ToBaseNotesArray(System.Collections.Generic.IList{ChartHelper.Types.Note})">
+            <summary>
+            Converts a set of ChartHelper notes to an array of srtb notes
+            </summary>
+            <param name="notes">The set of ChartHelper notes</param>
+            <returns>An array of srtb notes</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.NoteConversion.ToBaseNotesList(System.Collections.Generic.IList{ChartHelper.Types.Note})">
+            <summary>
+            Converts a set of ChartHelper notes to a list of srtb notes
+            </summary>
+            <param name="notes">The set of ChartHelper notes</param>
+            <returns>A list of srtb notes</returns>
+        </member>
+        <member name="T:ChartHelper.Parsing.SRTB">
+            <summary>
+            Class containing all JSON-serialized data used by the .srtb format
+            </summary>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.SetTrackInfo(ChartHelper.Parsing.SRTB.TrackInfo)">
+            <summary>
+            Sets an srtb's track info
+            </summary>
+            <param name="trackInfo">The new track info</param>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.SetTrackData(System.Int32,ChartHelper.Parsing.SRTB.TrackData)">
+            <summary>
+            Sets an srtb's track data with a given index
+            </summary>
+            <param name="index">The index of the track data to set</param>
+            <param name="trackData">The new track data</param>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.SetTrackData(ChartHelper.Parsing.SRTB.DifficultyType,ChartHelper.Parsing.SRTB.TrackData)">
+            <summary>
+            Sets an srtb's track data with a given difficulty
+            </summary>
+            <param name="difficultyType">The difficulty type of the track data to set</param>
+            <param name="trackData">The new track data</param>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.SetClipInfo(System.Int32,ChartHelper.Parsing.SRTB.ClipInfo)">
+            <summary>
+            Sets an srtb's clip info with a given index
+            </summary>
+            <param name="index">The index of the clip info to set</param>
+            <param name="clipInfo">The new clip info</param>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.SerializeToFile(System.String)">
+            <summary>
+            Serializes the srtb to a file at a given path
+            </summary>
+            <param name="path">The path to serialize to</param>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.Serialize">
+            <summary>
+            Serializes the srtb to a string
+            </summary>
+            <returns>The serialized string</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.GetTrackInfo">
+            <summary>
+            Gets an srtb's track info
+            </summary>
+            <returns>The track info</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.GetTrackData(System.Int32)">
+            <summary>
+            Gets an srtb's track data with a given index
+            </summary>
+            <param name="index">The index of the track data to get</param>
+            <returns>The track data</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.GetTrackData(ChartHelper.Parsing.SRTB.DifficultyType)">
+            <summary>
+            Gets an srtb's track data with a given difficulty
+            </summary>
+            <param name="difficultyType">The difficulty type of the track data to get</param>
+            <returns>The track data</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.GetClipInfo(System.Int32)">
+            <summary>
+            Gets an srtb's clip info with a given index
+            </summary>
+            <param name="index">The index of the clip info to get</param>
+            <returns>The clip info</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.DeserializeFromFile(System.String)">
+            <summary>
+            Deserializes an srtb from a file at a given path
+            </summary>
+            <param name="path">The path to deserialize from</param>
+            <returns>The deserialized srtb</returns>
+        </member>
+        <member name="M:ChartHelper.Parsing.SRTB.Deserialize(System.String)">
+            <summary>
+            Deserializes an srtb from a string
+            </summary>
+            <param name="text">The string to deserialize</param>
+            <returns>The deserialized srtb</returns>
+        </member>
+    </members>
+</doc>
